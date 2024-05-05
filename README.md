@@ -645,24 +645,3 @@ java -jar jenkins-cli.jar -s http://192.168.59.105:32000/ -auth admin:$(kubectl 
 ```
 13. Видим уведомление об успешном завершении команд
 
-```bash
-Downloading Helm...
-Extracting Helm archive...
-Creating directory for Helm installation...
-Moving Helm binary to /home/jenkins/bin...
-Adding Helm binary to PATH...
-Checking Helm version...
-version.BuildInfo{Version:"v3.14.4", GitCommit:"81c902a123462fd4052bc5e9aa9c513c4c8fc142", GitTreeState:"clean", GoVersion:"go1.21.9"}
-Installing Nginx chart...
-NAME: nginx
-LAST DEPLOYED: Tue Nov 23 15:30:14 2021
-NAMESPACE: default
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-    NOTES:
-    1. Get the application URL by running these commands:
-    export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=nginx,app.kubernetes.io/instance=nginx" -o jsonpath="{.items[0].metadata.name}")
-    echo "Visit http://127.0.0.1:8080 to use your application"
-    Script execution completed.
-```
